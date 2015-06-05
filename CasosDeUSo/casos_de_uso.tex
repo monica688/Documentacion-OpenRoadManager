@@ -1,0 +1,82 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+%opening
+\title{Casos de uso}
+\author{Mónica Pérez Sueiro	}
+
+\begin{document}
+
+\maketitle
+
+\section{Técnico de oficina:} É o encargado de xestionar as inspeccións, o tramo o día e o técnico que as vai realizar, así 
+como de cambialas se fose necesario:
+\begin{itemize}
+ \item Crear inspección.
+ \item Eliminar inspección.
+ \item Asignar inspección de tramo a técnico de campo: asígnalle a un técnico específico un tramo dunha vía para unha data concreta.
+ \item Desasignar inspección de tramo a técnico de campo: cambia o técnico de campo asignado a unha inspección.
+ \item Responder incidencia cidadá.
+ \item Modificar incidencia cidadá.
+ \
+\end{itemize}
+
+\section{Técnico de campo:} Encargado de realizar inspeccións visuais nos tramos de vía que se lle asignan. 
+\begin{itemize}
+ \item Autenticación: cada técnico ten un usuario e un contrasinal para acceder a aplicación Android.
+ \item Ver calendario do día: cada día na pantalla de inicio aparecen as inspeccións programadas para ese día.
+  No mesmo caso de uso temos:
+    \begin{itemize}
+     \item Ver calendario de inspeccións pasadas.
+     \item Ver calendario de inspeccións futuras.
+    \end{itemize}
+ \item Volver a día actual.
+ \item Seleccionar inspección.
+ \item Abrir inspección: descárganse todos os datos necesarios para a inspección ao dispositivo non que vaia traballar o técnico (ábrese o mapa).
+ \item Reabrir inspección.
+ \item Volver a inspección aberta.
+ \item Volver ao calendario de hoxe (dende unha inspección aberta-mapa).
+ \item Ampliar mapa.
+ \item Reducir mapa.
+ \item Crear nova deficiencia (click nun punto do mapa no que non hai elemento).
+ \item Abrir elemento (click sobre elemento no mapa).
+ \Item Ir a localización GPS actual.
+ \item Abrir deficiencia: dende o mapa ou dende elemento.
+ \item Insertar dato de deficiencia.
+ \item Modificar dato de deficiencia.
+ \item Eliminar dato de deficiencia.
+ \item Votar ao mapa.
+ \item Pechar insección: os datos tomados gardaranse en local e poden ser modificados polo técnico que realizou a inspección.
+ \item Commit dos datos dunha inpección: os datos gárdanse de forma definitiva e o técnico non pode modificalos.
+\end{itemize}
+
+
+\section{Admin:}
+\begin{itemize}
+ \item Crear usuario.
+ \item Eliminar usuario.
+ \item Modificar datos de usuario.
+ \item Asignar zona xeográfica aos técnicos: os técnicos de oficina soamente poderán xestionar as inspeccións das zonas nas que están autorizados.
+ \item Deasignar zona xeográfica aos técnicos:
+ \end{itemize}
+
+
+
+\section{Xestor:}Encárgase de modificar datos cando hai cambios posteriores as inspeccións (como por exemplo que se amañou unha deficiencia), 
+e tamén leva as incidencias cidadás, respondendo aos usuarios que as notificaron, modificando o seu estado, etc
+\begin{itemize} 
+ \item Seleccionar inspección.
+ \item Abrir inspección.
+ \item Modificar inspección.
+
+\end{itemize}
+
+
+
+\section{Usuario anónimo:}Notifican desperfectos que atopan nas vías, pero soamente aportan unha descripción.
+\begin{itemize}
+ \item Notificar desperfectos.
+\end{itemize}
+
+
+\end{document}
